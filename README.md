@@ -8,7 +8,7 @@ platforms.
 ## Install
 
 ```console
-heroku buildpacks:add --index 1 https://github.com/gaffneyc/heroku-buildpack-jemalloc.git
+heroku buildpacks:add --index 1 https://github.com/Shopify/heroku-buildpack-jemalloc.git
 git push heroku master
 ```
 
@@ -81,18 +81,7 @@ heroku config:set JEMALLOC_VERSION=3.6.0
 | [5.2.0](https://github.com/jemalloc/jemalloc/releases/tag/5.2.0) |
 
 The complete and most up to date list of supported versions and stacks is
-available on the [releases page.](https://github.com/gaffneyc/heroku-buildpack-jemalloc/releases)
-
-## Thanks
-
-Continued development of the jemalloc buildpack is sponsored by [Dead Man's Snitch](https://deadmanssnitch.com).
-Ever been surprised that a critical scheduled task was silently failing to
-run? Whether it's backups, cache clearing, or sending invoices, Dead Man's Snitch makes it easy to
-[monitor heroku scheduler](https://deadmanssnitch.com/docs/heroku) tasks or to add
-[cron job monitoring](https://deadmanssnitch.com/docs/cron-job-monitoring)
-to your other services.
-
-Get started for free today with [Dead Man's Snitch on Heroku](http://github.com/deadmanssnitch/heroku-buildpack-dms)
+available on the [releases page.](https://github.com/Shopify/heroku-buildpack-jemalloc/releases)
 
 ## Building
 
@@ -109,12 +98,12 @@ Artifacts will be dropped in `dist/` based on Heroku stack and jemalloc version.
 
 - `make VERSION=X.Y.Z`
 - `open dist`
-- Go to [releases](https://github.com/gaffneyc/heroku-buildpack-jemalloc/releases)
+- Go to [releases](https://github.com/Shopify/heroku-buildpack-jemalloc/releases)
 - Edit the release corresponding to each heroku Stack
 - Drag and drop the new build to attach
 
 ### Creating a New Stack
-- Go to [releases](https://github.com/gaffneyc/heroku-buildpack-jemalloc/releases)
+- Go to [releases](https://github.com/Shopify/heroku-buildpack-jemalloc/releases)
 - Click "Draft a new release"
 - Tag is the name of the Stack (e.g. `heroku-18`)
 - Target is `release-master`
