@@ -8,7 +8,7 @@ platforms.
 ## Install
 
 ```console
-heroku buildpacks:add --index 1 https://github.com/Shopify/heroku-buildpack-jemalloc.git
+heroku buildpacks:add --index 1 https://github.com/pensiondynamics/heroku-buildpack-jemalloc.git
 git push heroku master
 ```
 
